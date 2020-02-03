@@ -1,0 +1,82 @@
+item.acresize >= this.state.min_acre_size &&
+item.acresize <= this.state.max_acre_size &&
+item.yearbuilt >= this.state.min_year_built &&
+item.yearbuilt <= this.state.max_year_built
+
+
+https://media-cdn.tripadvisor.com/media/photo-s/0e/8b/f0/fe/mall-exterior.jpg'
+
+if(this.state.property != "All_Property") {
+  newData = newData.filter((item) => {
+    return item.property == this.state.property
+  })
+}
+
+
+<option value="All_purchase">Both</option>
+<option value="For Sale">For Sale</option>
+<option value="For Lease">For Lease</option>
+
+<option value="Industrial">Industrial</option>
+<option value="Retail">Retail</option>
+<option value="Restaurant">Restaurant</option>
+<option value="Shopping Center">Shopping Center</option>
+<option value="Multifamily">Multifamily</option>
+<option value="Office">Office</option>
+<option value="Health">Health</option>
+<option value="Hospitality">Hospitality</option>
+<option value="Sports">Sports</option>
+<option value="Land">Land</option>
+
+
+<option value="New York">New York</option>
+<option value="Las Vegas">Las Vegas</option>
+<option value="Seattle">Seattle</option>
+<option value="Chicago">Chicago</option>
+<option value="Boston">Boston</option>
+<option value="Phoenix">Phoenix</option>
+<option value="Portland">Portland</option>
+<option value="Phoenix">Phoenix</option>
+<option value="Miami">Miami</option>
+<option value="Houston">Houston</option>
+
+
+
+if(this.state.property != "All_Property") {
+  newData = newData.filter((item) => {
+    return item.property == this.state.property
+  })
+}
+
+if(this.state.city != "All_city") {
+  newData = newData.filter((item) => {
+    return item.city == this.state.city
+  })
+}
+
+if(this.state.purchase != "All_purchase") {
+  newData = newData.filter((item) => {
+    return item.purchase == this.state.purchase
+  })
+}
+
+
+
+.col-md-3{
+  width:25%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+}
+
+.col-md-9{
+  width:75%;
+  display: inline-block;
+}
+
+.col-lg-6{
+  width:50%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+}
